@@ -157,4 +157,4 @@ La idea general es crear una aplicación en la cual se puedan hacer peticiones h
 
 ## Archivo back:
 
-[link de back](https://github.com/kenpulicorre/laravel_CRUD)
+[link de back](https://github.com/kenpulicorre/Java_Back_parameta)
