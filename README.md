@@ -4,37 +4,45 @@ inicio de readme desde vi
 
 ## Objetivos del Proyecto
 
-## Descripción de la prueba
+Descripción de la prueba
 
-La empresa Existaya desea realizar un programa que le permita el registro votos en heroes de television y una ilustracion llevada hasta el backend
+La empresa Company PARAMETA desea realizar un programa que le permita el registro de sus empleados y una posterior validacion de informacion, todo esto desde un back java con metodo post.
+
+detalle:
+
+Implementar en Java un servicio Rest que reciba como parámetros los atributos del objeto
+empleado (que será descrito más adelante) al ser invocado mediante el método POST.
+El servicio deberá validar los formatos de las fechas y que los atributos no vengan vacíos,
+adicionalmente deberá validar que el empleado sea mayor de edad. Una vez se hayan
+superado estas validaciones se deberá almacenar la información en una base de datos mysql.
+El Servicio Web responderá con el objeto en estructura JSON, en el que se deberá adicionar la
+siguiente información:
+
+- Tiempo de Vinculación a la compañía (años, meses
+- Edad actual del empleado (años, meses y días)
+
+Atributos del objeto empleado:
+
+- Nombres (String)
+- Apellidos (String)
+- Tipo de Documento (String)
+- Número de Documento (String)
+- Fecha de Nacimiento (Date)
+- Fecha de Vinculación a la Compañía (Date)
+- Cargo (String)
+- Salario (Double)
 
 Requerimientos del programa
 
-## Requisitos:
-
-Interacción - JS
-Utilice un framework que permita ayudar en la creación de interfaces adaptables en diferentes dispositivos web con CSS y JavaScript, tales como Bootstrap / Foundation / Materialize.
-Utilice fuentes de proveedores como lo es Google Font.
-Utilice su propia fuente de iconos.
-Idóneo utilizar preprocesadores como LESS / SASS o cualquier tipo de marco CSS si lo desea. (Si prefiere utilizar CSS puro también es una opción, pero debe argumentar los beneficios)
-En responsive plante la visual y su diagramación.
-
-Solo agregue interacción en el banner principal referente a la votación.
-
-## Requerimientos:
-
-Cree una fuente de datos en formato JSON con la estructura que mejor se adapte al contenido de las casillas de votación y complete el contenido inicial a partir de ella.
-El usuario puede seleccionar el botón "me gusta" o " no me gusta" en la card del banner principal. Ideal plantear un estado para el botón Me gusta o no Me gusta y que el usuario perciba la microinteración.
-Una vez que el usuario hace clic en el botón "Votar ahora", se muestra un mensaje que dice "Tu voto ha sido registrado!" así como un botón de votar de nuevo que vuelve a traer la card inicial.
-No hay límite en la cantidad de votos.
-Las barras de porcentaje deben cambiar dependiendo de los votos positivos o negativos.
-Piense en una forma de conservar los votos actuales para que, si se actualiza la página, los datos no se pierdan. (podría ser local en el navegador o en el servidor si tiene esas habilidades).
-Queremos conocer sus habilidades del DOM JS, así que no use jQuery.
-Puede resolver esta parte con JS y algunos patrones, o el ideal Angular > v4 como framework. Utilice el que le resulte más cómodo.
-Entrega:
-Muéstrenos un vistazo de lo que le encanta hacer (y de lo que conoce mejor).
-Escriba en un archivo readme.md para hacer referencia a cualquier aspecto clave que desee mencionar sobre lo que aplicó en el ejercicio y / o cualquier otra información relevante sobre los pasos para poner en marcha el proyecto.
-Envíe un enlace apuntando a su repositorio (Github, Bitbucket) que incluye el recurso. La rama maestra debe contener todo el ejercicio.
+- Registro de clientes (nombres, cedula, celular, dirección, ciudad).
+- La ciudad debe tener asociado un departamento
+- Creación de API mediante Laravel y consumirlo con React
+- El agente se crea previamente en la tabla MySql (cédula agente, nombre)
+- Asignación de agente (un proceso simple donde se asigna el agente al cliente) mediante React
+- Listar los clientes con su respectivo agente en React
+- Las acciones del CRUD para los agentes y clientes, se deben hacer mediante React
+- Se debe usar Laravel.
+- Sistema de autenticación y registro mediante React
 
 ## antes de iniciar
 
@@ -139,18 +147,14 @@ mvwn spring-boot:run
 y para entrar a la ejecucion puede ejecutar: abre el navegador de tu preferencia (se recomienda chrome) y ejecuta
 
 ```
-http://localhost:8080/movie
+http://localhost:8080/empleados
 
 ```
 
 ## Documentacion postman
 
-La idea general es crear una aplicación en la cual se puedan hacer peticiones http, por lo mismo se utiliza postman para ello: [postman](https://documenter.getpostman.com/view/19592464/UzQxLibs)
+La idea general es crear una aplicación en la cual se puedan hacer peticiones http, por lo mismo se utiliza postman para ello: [postman](https://documenter.getpostman.com/view/19592464/UzQvtQt6)
 
 ## Archivo back:
 
-[link de back](https://github.com/kenpulicorre/back_existaya)
-
-## Archivo Front:
-
-[link de back](https://github.com/kenpulicorre/front_parameta)
+[link de back](https://github.com/kenpulicorre/Java_Back_parameta)
